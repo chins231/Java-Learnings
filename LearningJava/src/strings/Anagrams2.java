@@ -7,7 +7,7 @@ public class Anagrams2 {
 
 	public static void main(String[] args) {
 		String Str="atesta";
-		String str1="testa";
+		String str1="testae";
 		int count=0;
 		
 		Set<Character>set=new HashSet<Character>();

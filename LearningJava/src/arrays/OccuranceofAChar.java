@@ -12,7 +12,7 @@ public class OccuranceofAChar {
 		int num=occuranceOfChar(c,str);
 		if(num>0)
 		{
-			System.out.println("Occurance of "+c+" in +"+str+ " is"+ num);
+			System.out.println("Occurance of "+c+" in "+str+ " is"+ num);
 		}
 		else
 		{

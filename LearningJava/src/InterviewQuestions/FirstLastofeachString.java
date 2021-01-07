@@ -14,7 +14,7 @@ public class FirstLastofeachString {
 		{
 			System.out.println(str2.substring(0,1)+str2.substring(str2.length()-1));
 			String str3=str2.substring(1, str2.length()-1);
-			
+			System.out.println(str3);
 		}
 
 	}

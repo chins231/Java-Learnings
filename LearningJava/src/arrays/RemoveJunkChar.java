@@ -3,16 +3,18 @@ package arrays;
 public class RemoveJunkChar {
 
 	public static void main(String[] args) {
-		String Str= "dsfbdskfhderr2424324skjfh@#$%^&&^% hdfgkh45343434jdfj^&*) fhdsjfhd ";
-		String Str1= "dsfbdskfhderr2424324skjfh@#$%^&&^% hdfgkh45343434jdfj^&*) fhdsjfhd ";
+		String Str= "dsfbdskfhderr2424324skjfh@#$%^&&^% hdfAAAabczZgkh45343434jdfj^&*) fhdsjfhd ";
+		String Str1= "dsfbdskfhderr2424324skjfh@#$%^&&^% hdfAAAabczZgkh45343434jdfj^&*) fhdsjfhd ";
 		String str3="Hi This is Ranganath white spaces removed here ";
-		Str= Str.toLowerCase();
+		//Str= Str.toLowerCase();
 		String newStr="";
 		String newStr4="";
 		System.out.println(Str);
 		for (int i=0;i<Str.length();i++)
 		{
-			if(Str.charAt(i)>96 && Str.charAt(i)<=122)
+			if(Str.charAt(i)>=97 && Str.charAt(i)<=122)
+				newStr+=Str.charAt(i);
+			else if(Str.charAt(i)>=65 && Str.charAt(i)<=90)
 				newStr+=Str.charAt(i);
 			else if(Str.charAt(i)>47 && Str.charAt(i)<=57)
 				newStr+=Str.charAt(i);

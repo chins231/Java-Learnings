@@ -18,7 +18,7 @@ public class LongestSubStringWORepeat {
 			}
 			else
 			{
-				i=map.get(arr[i]);
+				//i=map.get(arr[i]);
 				map.clear();
 			}
 			if(map.size()>length)

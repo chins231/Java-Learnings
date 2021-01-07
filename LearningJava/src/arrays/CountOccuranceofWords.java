@@ -2,6 +2,7 @@ package arrays;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class CountOccuranceofWords {
@@ -22,6 +23,7 @@ public class CountOccuranceofWords {
 			}
 		}
 		System.out.println(map);
+		System.out.println(map.entrySet().stream().filter(map1->map1.getValue()>1).collect(Collectors.toMap(map1->map1.getKey(), map1->map1.getValue())));
 		System.out.println(map.entrySet().stream().filter(map1->map1.getValue()>2).collect(Collectors.toMap(map1->map1.getKey(), map1->map1.getValue())));
 
 	}

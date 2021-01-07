@@ -19,9 +19,9 @@ public class ArrayListClass {
 			list=new Scanner (System.in).nextInt();
 			aList.add(list);
 		}
-		System.out.println("Array Liost created is :"+aList);
+		System.out.println("Array List created is :"+aList);
 		Collections.sort(aList);   
-		System.out.println("Array Liost Sorted is :"+aList);
+		System.out.println("Array List Sorted is :"+aList);
 
 		Iterator aListItr=aList.iterator();
 		while(aListItr.hasNext())

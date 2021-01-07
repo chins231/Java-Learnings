@@ -28,7 +28,7 @@ public class Dup_HashMap {
 				   .filter(map1->map1.getValue()>=2)
 				   .collect(Collectors
 				   .toMap(map1->map1.getKey(),map1->map1.getValue()))
-				   );;
+				   );
 
 	}
 

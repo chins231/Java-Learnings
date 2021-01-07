@@ -19,6 +19,8 @@ public class BinSearch {
 
 			}
 			System.out.println(Arrays.toString(arr));
+			Arrays.sort(arr);
+			System.out.println(Arrays.toString(arr));
 			System.out.println("Enter element to search:");
 			int num = new Scanner(System.in).nextInt();
 			int pos = bin_search(num, arr);

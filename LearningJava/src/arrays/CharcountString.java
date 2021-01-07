@@ -14,15 +14,20 @@ public class CharcountString {
 		{
 			if(!map.containsKey(ch))
 			{
-				map.put(ch, 1);
+				if(ch!=' ')
+				 map.put(ch, 1);
 			}
 			else
-			{
-				map.put(ch, map.get(ch)+1);
+			{  
+				if(ch!=' ')
+				 map.put(ch, map.get(ch)+1);
 			}
 		}
 		System.out.println(map);
-		System.out.println(map.entrySet().stream().filter(map1->map1.getValue()>2).collect(Collectors.toMap(map1->map1.getKey(), map1->map1.getValue())));
+		System.out.println(map.entrySet().
+				                         stream()
+				                         .filter(map1->map1.getValue()>2)
+				                                                         .collect(Collectors.toMap(map1->map1.getKey(), map1->map1.getValue())));
 	}
 
 }

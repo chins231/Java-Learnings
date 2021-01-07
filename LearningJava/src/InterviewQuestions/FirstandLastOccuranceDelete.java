@@ -19,7 +19,7 @@ public class FirstandLastOccuranceDelete {
 		System.out.println(count);
 		int first=str.indexOf(c);
 		System.out.println(str.lastIndexOf(c,2));
-		int last=str.lastIndexOf(c,first+1);
+		int last=str.lastIndexOf(c);
 		System.out.println(" "+first+" "+last);
 		String str2 = str.substring(0, first) +  
                 str.substring(first + 1,last)+

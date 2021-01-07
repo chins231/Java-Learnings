@@ -10,6 +10,13 @@ public class Numbercheck {
 		
 		switch(n)
 		{
+		case 1:
+			min=1;
+			max=9;
+			break;
+		case 2:
+			min=10;
+			max=99;
 		case 3:
 			min=100;
 			max=999;
